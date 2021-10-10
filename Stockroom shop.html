@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    body {
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    h1 {
+        text-align: left;
+        padding-top: 100px;
+        margin-left: 50px;
+        color: rgb(64, 224, 171);
+
+    }
+
+    nav {
+        background-color: rgba(0, 0, 0, 0.02);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    ul {
+
+        display: flex;
+        list-style: none;
+
+    }
+
+    li {
+
+        padding-left: 20px;
+        padding-right: 10px;
+        color: brown;
+
+    }
+
+    #we {
+        padding-left: 400px;
+    }
+
+    h2 {
+        color: rgb(64, 224, 171);
+    }
+
+    #do {
+        width: 300px;
+        border-radius: 50px;
+        height: 20px;
+    }
+
+    form {
+
+        width: 300px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    #img1 {
+        margin: auto;
+        width: 200px;
+        height: 150px;
+    }
+
+    p {
+        color: salmon;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: lightseagreen;
+        color: lightgreen;
+
+    }
+
+    #T {
+        display: flex;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <a style="padding-left: 40px;" href=""><img width="60px" height="45px"
+                src="https://www.designfreelogoonline.com/wp-content/uploads/2016/07/000749-online-store-logos-design-free-online-E-commerce-cart-logo-maker-04.png"></a>
+        <h2 style="padding-left: 20px;" id="title">Stockroom</h2>
+        <input id="do" style="margin-left: 50px;" type="text" placeholder="Search">
+
+        <ul>
+            <li id="we"><a href="stock%20room%20homepage.html">Home</a></li>
+            <li><a href="Stockroom%20shop.html?">Shop</a></li>
+            <li><a href="Stockroom%20About.html">about</a></li>
+        </ul>
+
+
+    </nav><br><br>
+    <DIV id="T">
+        <form>
+            <img id="img1"
+                src="https://images-eu.ssl-images-amazon.com/images/I/91FvDEE9sCL._AC_UL450_SR450,320_.jpg"><br>
+            <p>American Tourister casual backpack</p>
+            <p>$28.62</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+        <form>
+            <img style="width: 130px; height: 180px;"
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQVFBgVFBQYGRgYGBgbGxsbGBgZGRkbGhgZHxsbGBgbIS0kGyIqIBkYJjclKi4xNjQ0GiU6Pz4yPi0zNDEBCwsLEA8QGRISHz4rJCU+MT4+MTIzPj4+PjwzPjU+Pj41OzYzNz4+Pj0+Oj4+PjU+PjY9Pjw5PT86Pj8+Pjw0Mf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQMEBgcIAQL/xABGEAACAQIDBAcFBQYDBgcAAAABAgADEQQSIQUxQVEGEyJhcYGRBzJCUqEUcpKisiNigrHBwlNj8DRDc4OTsxUkM3TR4fH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQMC/8QAIBEBAQEBAAEEAwEAAAAAAAAAAAECEUEDEiExUWGhIv/aAAwDAQACEQMRAD8A3NERAREQEREBERATwmRPSDblHB0jVqk8lVbFnPyqDp4k2AGpImgemXT3E4xmQvlp/wCGhIS1/iOhqH72nJVgbu2n082bhzlq4ynmuRlTNVII3hurDZT42mLbR9rmHJyYUKTwarmRT4LYC3iyzQpYmfMDbGN6d4yoSBiLXHu0+rHjlZe0fUyEr7fxDe9XqnxqOf5mYTQqEG19/pfh4eI3SWp4hm7J1YAkE72A3g/vLz4gX8aJkbarDdVceDuP6y6w/SzGUz2cTW04dY7D8LEiQdJC26SKUUpjMxGm8nhKMpwHtG2ku8JUH+YgU+qZfrMo2Z7UEJAxWGqUv30YVkHewADjwCtNQVtt8ETTmdPQSmm2X4qp8LycHTezNpUcRTFShUWop0upvY8Qw3qRyOol9ObdjdIWpVBUo1DSqbr/AAuB8Lrudd+h3XuCDrN3dEulCY1CCAlZRd0vcEbs9M/Ep9QdDwJgySIiAiIgIiICIiAiIgIiICIiAiIgJQxOIWmjVHNlUFieQAuTK8wX2n7V6ugtMfEczHuQjIOYJchgf8thxgam9oPSV8TWZmJF9FW4/Zr8gsSL/MRe7cbBQuDSvi6udy3M6eEoQEREAJJMSArjeBmHipAPqMvpI2TNGndU+6/9kC/osVOZPTgR3y12liesYcFXcO8jUn+X/wCy+wKXpp9xf0iWeNp2fxlgj7NyEqKvPSVGWUFZhv8A5QKmWTGwts1KFRHpvlZDdG3gc1YfEpGhHI8DYiLVdLz3LKOnOjm2UxdBKyaE6Mt7lHFsyk8d9weIIPGS00R7MukZw+JFOof2dbKjXOga/wCzfyJyk8mufdE3vOQiIgIiICIiAiIgIiICIiAiIgJo32t7RLVqo3ZclMG/vKqBge6z1Ko15d83lOYum+OFV84JIqM1UX5VXaoBryDgW4ACBiN5NpsumlA1sQzAup6mmts7Hg7392nfzbhaWWxsL1tenTO5nUHwvr9LzYmzthUsYetxFJxmqN1ZDNkagh6oAqqfs0FR6d2BJstRuyBc6Zkmba41bdSRiAx2HGG6sU6ZqdUVzFTmzu92Nyu9VVba6ZrDewlHG7MpnDJiaBawslVWtdXtvFvhP9R32zCj0Lw9TIFUUwaNC61HdK2evVSkXZXADKpFTKyqoZnp3Ft8TtyhTo0cStNDTRjhVFNmZilXItSohzahlzZWB3MG3aCd5vv7LPqONT2csv3Z/WEATIqa5Vufgp/qLE/oHrIHDLd1HfMnZeyRzcD+FcqEW53R/WYNl5haWVAvIAek+MXsx3oviF1Wi9NHFtwq5sr35BlVbfvjkZcINJsX2b7LWvgcXTqDs1qr0z3r1SC4PMFm8xA03knxUfKL75fYrCNSqPScWem7I/LMrFSR3G1x3ESg1MHQzoUM63Ave/cfSVLT5GF1HaNh6+sr2gUwLazofoJtv7Xg0djd07D8yygWY97KVbxJnPlpsH2PbUyYl8OT2aq3XX4kuwsO9S9/uiSjc8REgREQEREBERAREQEREBERAiukuIanhK7qQGFJwt92dlKpfuzETmPpRWDViBuBNvDcPoJ0D7ScSEwirY9uqm7h1YasCe7NSUeLDnOdKlI1sQEUgFmCgncO8wKezcWaVVKg+FgfEA6jzFxJvbWz6rnrKBapRYsVylmy5r5ly7xvI3bt+t5HYfYlR6j07EFNW0FwCRa4zWGhvv3Az5wnWpSaqlR0AYCwJAa9uII7+HDvmud55ZqfH6Z6zezWb8quF2HVbtVf2VMWzPU7NhusAdSeQnztjHK+SlSBFKmCFvvYn3nbvJ9JdbQ2bUKK71y7NYBSSSpK31JOguAPEiUMRsUJm/aE2BIOS1wqkne2hBUgjhdb77BdZk5nyTF73XhabFp3qi+4SfXXqxuJUvbf7wu1/OoZEbGpkhyNCVKg8i1lX6sJO3zVWI3AC3mST/bMmi5G6bl9nGGKbOo33v1lTyeo7L+UrNL4l8qMeSnx3cJ0LsrCCjQpURup00QeCKF/pA037Vtm9Vj+tAsuIpq/8adlvyimfEmYXlm3/bFgs2Go1gBelWyk8QlRSDbxdac1HLBamplqKx1ABsCAVvzZTo3gbiSWPxVCqVqUaJosVPW0wc1JXBFmom91VhfsG2WwtcGWjoDoReKaKBZbet/Uyhll5sTH/Z8TRrA2COjH7uYZh5rcectrT5caQOogZ7IboljOtwWHqE3JpIGPNlGVvzAyZnIREQEREBERAREQEREBERA1h7XMbYpTDe7TZmXvqOoRu7SlVHfmPKat6I7No1PtOLxSl6GFph2ph2TrKjtlpoXAuoJvqNdBv1mV+1rG5sRW/dyUwb71VFbys9SoLdxPGQ2yMIw2OUUWfHY+jQBN9URbg6bwKhIt4wJjaGwcBSzY44YiiuCwlY4XrXymvincBDUPayqqhivfwGkiemfRVFerWw6pQp0sPhqtWkzs5p1MQSBTpmxza2OthrwFpnm1NorRrWWmlb7bj6WGSnVu9NaWFyU2ZUI94VSxzagdnfaa46f7Ndq+IxpqAo+Mq0UDNeoeruCwAFurGXKut7AacYFb7HTOxKTDDJ9oq4zqUqWBd0sWuG4dqyWPAGX/AEiTZWHXFbPOHtVoInVYi7NUq18oLZgBZFubZb20PG1r/Z+CBq7Bwdz2UbFtoNQ7msL8DpSI528ZH9L8bRxmzmxn2WjSqNtB0pvTTI9SmaZctVOvWEki7fNy1uGN7DSyL+9UB5e4rOPqi+skcJqWPNj+Wy/2/WW2BXKi8gjE+LMuU+iPLrAqQi33kXPidT9bwJXY+GNTFYemPjr0796q4Z/yq06BmlfZ5hhU2lSJ/wB1Tq1Pyinr/wBWbqgY37QcKKmzcSPlp9Z50mFQfomgyJ0rtPDipRqUyLh6br+JSP6zmmmbqDzAlgoYxSUYDl6i+o9LyywwKuMtyGOhG6x3g+X8pKGfCIgbTKGPK1/SBUtPbRPQJRtf2TbcVqRwbaNTDOn76M5zeaude5175sec6dG9onD43DVb2AfK2unVswV787K5PiBOi5yEREBERAREQEREBERAREiukuJanhK7pbMKT5L7s5UhL24ZiIHOvTbHiq5cEkVHeoL78tV2qKNeQcADgAJfdHekWLw+EFNKeHdEL1aT1UzPQbW7076X0JGh38d0x3pNVBrEDcL28Nw+glgcbUtlztYaAX0Ay5bfh0gZrsPpVjlw6qqYd2V6ppV6qhq1J6pvUNMnizEm9jqDe+gmIV8FU6xVcjPVytckn3zvY876nfMh2X0axORKlfEU8HSYdg1Wyuy9rVKe8i7k629644SkvR6tVQV8PiEruq3ZFa1VAb6BDv8AeOmmugvM762J5dTFv1F4dv4s43D4xFoI6UqSUx2jTCZXUIy79Vz3tu4EESw6Tbar4hqNOolGjTUZko0EyUkzkljl4sbam5HK2sg//EKvznRSutjoQARr3C3rzMqYB3qVVzMWOguTfSaOU7WHYYcylO/8CkW86rS/pDSR7NmKcczM3MZSzsn0KCSKwM/9kmHJq4mqRoFpU1PeS7OPTq5s+YP7KcNlwTVP8WvUbyW1Ow7r0yfMzOICcy1qORmT5GZfwsR/SdNTnDa62xFYf51X9bSwR9pCM6hVLJ2gHDHMQxqEsQ/cq3UWG8qecnSJTNNM1yFzHXvPfbjA9pElVLbyqk+JAvKoEAT6USihil1X+P6qh/tnS2zq/WUadT50RvxKD/Wc2Yn4fE/oM6K6N/7Hhv8A29H/ALayUScREgREQEREBERAREQEw72mYoJhAp/3lVB4dXmrAnuvSA8SOczGat9sGOsadMMOzTd2XTe7qqNzGiVR33PKBpDaFTNUY98l9gYSmKVbE1lDJTAVUJsHqPoASDeyjtG2u6QLNck8yTJtVc7PNmORcRdkstgSgUNe2biBvtruj2294y9W/E+edse0MJicea1Z6yM9NQzGrVCuy6+7m0sLWJNgMwudRLWvTrYLEWDgOoRg9NgylaiKysrDeCjqfOVdibYShfNQWqrvTLhmtmSmS3VHQ9ln6tjz6tRznyFbF4p3NwHdnYs2YqpNyWYgXsNL2HDdLMd/zI3z3s4+ekdAJXOXQMqsBcki41uTqTe58587F7JZ/lRj5hSR9bShtPEmpVZ73BNgbBeyNF7I3aAaS/2MLITzZPQMGb8qNOZLJJXXral3bPqpGmlqmXgiBfqACfJPrJBmsCeQkfgBcse8DyAH9S0kGoGqVpA2NR0pg8i7BB9WlZt5dDsIaWBwyEWPUozDk7jM4/Exk5PhFAAAFgBYDkBPuAnOe2f9or/8ar+tp0ZOcce+ao7fM7t6sTLBZ2kEyksLkgsWLa2JKm1r91t0nyJSNBL3Kgnf6ccu6/fA9pXyrffYX9JUET6WUUsXvH+vgadE9HVthMOOVCl/21nOuNOo8G+iL/8AM6S2bTy0aa8kQeiiSi6iIkCIiAiIgIiICIiAmg/a7js2LrD5AlMG97hUD+VmquLd3fN+TlzpxizUr1GJvnq1GB/dao7KL8bKVHgBAxeSWytqtQzgKGV1ysrC6nQ2PiLn1MjRPLy5tl7E1manKnsJtlUwzUuqQscwDFQdHFiSTrccPLlrZNtI9SKSKFHxEb3N/iPLukfPIzbnvPLXXq6sk/E4TIcGMtNB3O36U18nbzEgEFyB3yerNZLDeFUAd9mJ/Wn+hIzSWzF/Zg87t+Ilh/OZH0Qw3WbQwyWuBUNQ93V02dT+NU9RIPDoAABuAAHgN0zX2V4bPjalThSoZbfvVXXKb+FN/WBt6IiBSrPlVm+UE+gvOcBu8pv7pPWyYPENxFGpbxKED6kTQbSwUajWBPIE+gvIFAxYEN2rBi1gWJbdY8B3DlMhMophkBuFAI+nGwHDwgVLT6WeT1RKLfFglwByb6lB/SdNItgAOAA9Jzfs2nnxlFPmqUV8c9Y//U6TkoRESBERAREQEREBERATkXap0p/8On+hZ11OTdv4fq6lSnxo1HpG+/sOyrf+ED0MCFnqi88nqm0Ay2nk9ZrzyBcYKndxfcNT4SWonO6jvLnu1ut/yL5SNw4sPvb/ALvLz/leTGBSy5jvex8F+H1uW81gSyHSbQ9kWFtQr1iNalbKD8yU1FvzvUHlNTvWCqWO4An0m/8Aohsw4bBUKLCzqgLj/Mcl3/MzQJuIiBintIxOTAut7Go9NB+MMR+FGmmSZsn2tYzShRHNqjd1gFT9T+k1oxlgstouwQBSQWYLccAb3t6W85H7KB6wFQAuo3akW4n085MVStu3a3eQB6meUqaqOwAAddOPffjA+57efMHXTnYesok+g1DrNp0FIvaqD/06Zf8AmDOhJpH2P4frMY1W2i06j35NUcAflZvSbukoRESBERAREQEREBERATnv2x7FNDHmso/Z4pc1uGdAFcePut4tOhJr72wYDrMJTewPV1gGv8tRWXT+Pq/Tugc6GJlH2CmdHB8RbXxBFj4ix5z5bZVEcz/Aw/vgYyJVall97Tu4+fKS+JpFRamgXmdF+rG49Zaph1BuxztyF8t/3joW8BbxgeYKgT2392+g+cjh90cT5b5JrUvqTKSUixu/oLCwG4ADQDul/QpqQwI7+/1l4Mh9nmxjjMYtxelQK1Kh4Eg3pJ5st/BG5zfsxj2fbMp0Nn4fINatNKrtxZ6iKxJ8LhRyAEyeQIiWG2doLh6FSs26mjNb5iBoviTYecDT/T/aHW46rbVaeWkP4b5vR2ceUxgmevVZiWY3ZiWY82JuT5kykzgC5NgN5nQiNoOc5LC9iFUHcARcm3En/W6SOzkZadmtcsTbdYG28TynjEZgBe/AlSAfA8DLjNIPZQxNSyMeSm3i3ZH1a/lKhMtMU18i/M2Y+CaD1JP4ZRtj2L4HLSr1fmdKY7si5jbx6xfSbOmNez/AdTs+gp3svWH/AJhLC/gpUeUyWchERAREQEREBERAREQEhulmzjiMHXpKLs1MlBzdO2n51WTMQOaVYMoI1BAMoVaC8vqZPdKNm/ZsZWpWsocvT0sOrqdtQByW5T+AyGeUR74deX1niqBuAEuKglAyj0GV8M/b8biW156r2N+UDoboDiBU2dhiPhTq/OkxQ/pmRTXPsk2kGp1qBPuOtVOWSoLEL4MhJ+/NjTkJrL2t7ZsKeDQ6tarU+6pIRT4sC3d1Y5zP9rbRp4ei9aqbIi5jzPAKBxYkgAcSQJzxtPaFTEVnr1PfqOWIvcKNAqA8lUKvfa++WCiWlrjKRcAA7jcjnodJUquFUsdwBMsDinJFmAPAAX9ZRWw2GYMGc7twB08/CXmaU8x8+Nt3lPM0D732A3nQSrsLAnFYxKa3s7rTBG8Ip7bDyztLStVyoWHvN2E8SO03kPqRNi+xjYt6lTEsOzTXIn33ALW5FUsPCpINuooAAAsALAcgJUiJAiIgIiICIiAiIgIiICIiBrn2sbHzU6eLUa0zkqW/w3PYY8Tlc2/5jHhNXMZ0hisOtRGpuoZXUqyncVYWIPkZz70j2O+DxDUHuQO1Tc/HTJ0b7w91u8ciJYIipLd5cO0tnlHyTPLz5JnzmgZX0G22MNiqdVjZATTqHTSnUIuSTuCsEcnkk6EJnKmHrZW13HQ+BmZbU6X4mphKeDzWVUy1KgJz1kGiITwGW2Y3u/cLgwXftB6Wfa6go0W/8vTNwRurONM3ei6hedy2vZIw+exAtGxi/CCe/d6SqhFrgWv3WPnPtaKjcoHgJ4xlHwTPEXMbDTmeAA3kzwAkgDUndKGMrf7pDe57bD4j8oPIcZB90ga1VQgJUEIije1yALD5ma2neBOkui2yBhcLTo6ZlF3I4u2rEd1zYdwE1r7JOjGZ/tTr2KZIS/xVLWJ7wgP4jzSbjkCIiAiIgIiICIiAiIgIiICIiAmP9LujdPHUcjdl1u1Opa5RrcR8SncV49xAIyCIHMW1MDVw1VqNdMjpvG8EcHRviU20PloQRLBmnR3Sboxh8dTyVl1W+Rxo9MnflbkdLqbg2GmgmkelHQfGYIsxQ1aIuetpqSANf/UQXanoNTquu+UYyzT5LSl1l908LyipmkhgMUCMjH7p5SKzTzPJ0SuJxbU2s4HceB/1ynwu0xyEYbHKy5KguOfET7fZynVLMPHWUfS7QQ7wJeYfq6ml7GRL4Ij4D6CU6CWqKFuGDDj638rwLrGI6ZgpsSCO/vtyNryY6FdFKmLrBFuoADO9gRTU37RvpmNiFHEgncrWsahzuT4mdB9EtmJh8JRRECMyI9TizVGVc7Mx1Jvp3AACwAEgkdnYJKNNKNNcqIAqjfoOZOpJ3knUkky7iJAiIgIiICIiAiIgIiICIiAiIgIiICIiBr/2k9FMK+FqYhcMgqIVZ3QZHKBh1jMVsGyrdu1fRZpXG7GK602LLwva/qJ1O6gggi4OhB4zVPST2bVUZqmAZWQ3PUOcrL+7Sc6Ecla1ufINOvh2G/Txv/QGU+rPAr65fq9pmON2Fj6ZtUwOI8Vpmov4qeYfWROJplNatF073pug9WEvBGUdnVG3NR/ixOGT9TiS+C6P1CATjcDT7nxdMkePV5pY/aKPd6z6WvQHy+ojgmXwOHQWqbS61uNPC0Xe9+Ar1MiDxsbcpYU8EqEvZkB3BnzuByLhVBPeFH9ZWwD1ammFw71De37Omz2PeQLDzmabC9mWLrkNjX6hOKKyvWYeIuiePaPcIET0J2A2NxAXL+xQg1m4Zd4pjmz2sRwUk8r7+ljsvZlLDUlpUECIu4D6kk6sTxJ1MvpAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiBGbX3eUx/De+IiUZgm4eAn3ESBERAREQEREBERAREQERED//Z"><br>
+            <p>Mi Smart Band 5</p>
+            <p>$29.28</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form><br>
+        <form>
+            <img id="img1" src="https://m.media-amazon.com/images/I/71+ZgKdJXTL._AC_UL320_.jpg"><br>
+            <p>Amazon Solimo Alpha</p>
+            <p>$173.03</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+        <form>
+            <img id="img1" src="https://m.media-amazon.com/images/I/71Dgrxh8pPL._AC_UL320_.jpg"><br>
+            <p>Nerf Alpha Strike Flyte Cs-10 Motorized Blaster</p>
+            <p>$19.96</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form><br><br><br>
+
+    </DIV>
+    <div id="T">
+        <form>
+            <img id="img1" src="https://m.media-amazon.com/images/I/81Ji1gmJgrL._AC_UL320_.jpg"><br>
+            <p>Nivia Simbolo</p>
+            <p>$15.97</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+        <form>
+            <img id="img1" src="https://m.media-amazon.com/images/I/61aXGOXBPrL._SL1500_.jpg"><br>
+            <p>SG RSD Spark Kashmir Willow Cricket Bat</p>
+            <p>$21.30</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+        <form>
+            <img id="img1" src="https://m.media-amazon.com/images/I/81qPp+KABqL._AC_UL320_.jpg"><br>
+            <p>Runstunner M</p>
+            <p>$21.30</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+        <form>
+            <img id="img1"
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/wireless_products/kosshiva/biggest_offers_this_festive_season/xcm_banners_rn10s_1-5_434x641_in-en.jpg"><br>
+            <p>REDMI note 10S</p>
+            <p>$21.30</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+
+    </div>
+    </DIV>
+    <div id="T">
+        <form>
+            <img id="img1" src="https://m.media-amazon.com/images/I/71Q3iSQAwAS._SL1500_.jpg"><br>
+            <p>Samsung Galaxy M32</p>
+            <p>$15.97</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+        <form>
+            <img id="img1"
+                src="https://images-eu.ssl-images-amazon.com/images/I/41Cv7ezKlqL._SY300_SX300_QL70_FMwebp_.jpg"><br>
+            <p>HP OMEN</p>
+            <p>$21104.73</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+        <form>
+            <img id="img1" src="https://m.media-amazon.com/images/I/81qPp+KABqL._AC_UL320_.jpg"><br>
+            <p>Runstunner M</p>
+            <p>$21.30</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+        <form>
+            <img id="img1"
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/wireless_products/kosshiva/biggest_offers_this_festive_season/xcm_banners_rn10s_1-5_434x641_in-en.jpg"><br>
+            <p>REDMI note 10S</p>
+            <p>$21.30</p>
+            <button onclick="clickme()">shop now</button><button onclick="clickt()" style="margin-left: 10px;">Add to
+                cart</button>
+        </form>
+
+    </div>
+    <script>
+        function clickme() {
+            alert("Hurray!The item will be delivered on your doorstep.");
+        }
+        function clickt() {
+            alert("Added to the cart.");
+        }
+
+    </script>
+</body>
+
+</html>
