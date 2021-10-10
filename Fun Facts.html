@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts about dogs</title>
+    <style>
+        body {
+            background-image: linear-gradient(brown, beige);
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            color: chartreuse;
+        }
+
+        a {
+            color: chartreuse;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        ul {
+            display: flex;
+            margin-left: auto;
+            list-style: none;
+        }
+
+        nav {
+            height: 40px;
+            background-color: fuchsia;
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 220px;
+            height: 200px;
+            border: 10px solid goldenrod;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2>Pup menu</h2>
+        <ul>
+            <li id="B22"><a href="Student%20project%20home.html" id="E22">Home</a></li>
+
+            <li id="B21"><a href="Diffrent%20types%20of%20breeds.html">Breeds</a></li>
+
+        </ul>
+    </nav>
+    <header>
+        <h1>Fun Facts about dogs</h1>
+    </header>
+    <p>Let's look at some fun facts about dogs</p>
+    <ul>
+        <li>1. Dogs Originated from wolves</li>
+        <button onclick="h1()">Show Picture</button>
+        <img src="gray-wolf-closeup_2x3.webp" id="il">
+    </ul>
+    <ul>
+        <li>2. Their sense of smell is at least 40 times better than ours</li>
+        <button onclick="h2()">Show Picture</button>
+        <img src="dog nose.jpg" id="li">
+    </ul>
+    <ul>
+        <li>3. They can only sweat in there paws</li>
+        <button onclick="h3()">Show Picture</button>
+        <img src="Paw.png" id="L1">
+    </ul>
+    <ul>
+        <li>4. A dogs nose print is unique it is much like our fingerprints</li>
+        <button onclick="h4()">Show Picture</button>
+        <img src="Did u know.jpg" id="L2">
+    </ul>
+    <ul>
+        <li>5. Dalmation puppies are born completly white they get there black spots later on</li>
+        <button onclick="h5()">Show Picture</button>
+        <img src="Pup.png" id="L3">
+    </ul>
+    <ul>
+        <li>6. Three puppies survived the titanic</li>
+        <button onclick="h6()">Show Picture</button>
+        <img src="Titanic.jpg" id="L4">
+    </ul>
+</body>
+<script>
+    var temp1 = false;
+    function h1() {
+        if (temp1 == false) {
+            document.getElementById("il").style.display = "inline-block"
+            temp1 = true;
+        }
+        else {
+            document.getElementById("il").style.display = "none"
+            temp1 = false;
+        }
+    }
+    var temp1 = false;
+    function h2() {
+        if (temp1 == false) {
+            document.getElementById("li").style.display = "inline-block"
+            temp1 = true;
+        }
+        else {
+            document.getElementById("li").style.display = "none"
+            temp1 = false;
+        }
+    }
+    var temp1 = false;
+    function h3() {
+        if (temp1 == false) {
+            document.getElementById("L1").style.display = "inline-block"
+            temp1 = true;
+        }
+        else {
+            document.getElementById("L1").style.display = "none"
+            temp1 = false;
+        }
+    }
+    var temp1 = false;
+    function h4() {
+        if (temp1 == false) {
+            document.getElementById("L2").style.display = "inline-block"
+            temp1 = true;
+        }
+        else {
+            document.getElementById("L2").style.display = "none"
+            temp1 = false;
+        }
+    }
+    var temp1 = false;
+    function h5() {
+        if (temp1 == false) {
+            document.getElementById("L3").style.display = "inline-block"
+            temp1 = true;
+        }
+        else {
+            document.getElementById("L3").style.display = "none"
+            temp1 = false;
+        }
+    }
+    var temp1 = false;
+    function h6() {
+        if (temp1 == false) {
+            document.getElementById("L4").style.display = "inline-block"
+            temp1 = true;
+        }
+        else {
+            document.getElementById("L4").style.display = "none"
+            temp1 = false;
+        }
+    }
+</script>
+
+</html>
